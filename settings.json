@@ -1,0 +1,84 @@
+{
+	"events": [
+		{
+			"name": "0401",
+			"activation": {
+				"start": {
+					"month": 10,
+					"day": 1
+				},
+				"finish": {
+					"month": 10,
+					"day": 20
+				}
+			},
+			"folder": "0401",
+			"actions": [
+				{
+					"type": "sound",
+					"weight": 10,
+					"options": [
+						{
+							"file_name": "1.wav",
+							"volume": "max"
+						},
+						{
+							"file_name": "2.wav",
+							"volume": "max"
+						},
+						{
+							"file_name": "3.wav",
+							"volume": "max"
+						},
+						{
+							"file_name": "4.wav",
+							"volume": "max"
+						},
+						{
+							"file_name": "5.wav",
+							"volume": "max"
+						},
+						{
+							"file_name": "6.wav",
+							"volume": "max"
+						},
+						{
+							"file_name": "7.wav",
+							"volume": "max"
+						}
+					]
+				},
+				{
+					"type": "apps",
+					"weight": 1,
+					"options": [
+						{
+							"file_name": "reg.exe",
+							"params": "add HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize /v AppsUseLightTheme /t REG_DWORD /d 0 /f",
+							"description": "Смена палитры на ночную"
+						},
+						{
+							"file_name": "reg.exe",
+							"params": "add HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize /v AppsUseLightTheme /t REG_DWORD /d 1 /f",
+							"description": "Смена палитры на дневную"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "NewYear",
+			"activation": {
+				"start": {
+					"month": 12,
+					"day": 31
+				},
+				"finish": {
+					"month": 1,
+					"day": 2
+				}
+			},
+			"folder": "NewYear"
+		}
+	]
+}
